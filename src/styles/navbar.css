@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #EEEEEE; 
+  font-family: 'Work Sans', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 3rem;
+  padding-top: 0.3rem;
+}
+
+.nav-links a {
+  color: #4a7c3a; 
+  text-decoration: none;
+  font-weight: 600; 
+  font-size: 1.1rem;
+  display: inline-block;
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #355428; 
+  text-decoration: none; 
+}
+
+.nav-links a:active {
+  transform: translateY(1px); 
+}

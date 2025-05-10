@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Work+Sans:wght@400;600&display=swap');
+
+.practice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Dela Gothic One', cursive;
+  min-height: 10vh;
+  padding: 0;
+}
+
+.practice-title {
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.difficulty-buttons {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.difficulty-button {
+  width: 200px;
+  height: 90px;
+  border-radius: 10px;
+  border: 2.5px solid #111;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color: #222;
+  cursor: pointer;
+  transition: filter 0.15s;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.difficulty-button.easy {
+  background: #c8e6c9;
+  border: 3px solid #0e3303;
+}
+
+.difficulty-button.medium {
+  background: #ffffa7;
+  border: 3px solid #5f6100;
+}
+
+.difficulty-button.hard {
+  background: #e6a3a3;
+  border: 3px solid #361111;
+}
+
+.difficulty-button:focus {
+  outline: none;
+  filter: brightness(0.97);
+} 
+
+.difficulty-button.easy:hover {
+  background: #abc5ab;
+}
+
+.difficulty-button.medium:hover {
+  background: #dcdc99;
+}
+
+.difficulty-button.hard:hover {
+  background: #c48a8a;
+}

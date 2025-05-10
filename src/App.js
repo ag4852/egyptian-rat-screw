@@ -1,25 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Navbar from './components/navbar';
+import Homepage from './pages/homepage';
+import Learn from './pages/learn';
+import Practice from './pages/practice';
+import Quiz from './components/practice/quiz';
+import Completion from './components/practice/completion';
+import './styles/App.css';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <>
+        <Navbar />
+        <Homepage />
+      </>
+    ),
+  },
+  {
+    path: "/learn",
+    element: (
+      <>
+        <Navbar />
+        <Learn />
+      </>
+    ),
+  },
+  {
+    path: "/practice",
+    element: (
+      <>
+        <Navbar />
+        <Practice />
+      </>
+    ),
+  },
+  {
+    path: "/practice/quiz",
+    element: (
+      <>
+        <Navbar />
+        <Quiz />
+      </>
+    ),
+  },
+  {
+    path: "/practice/completion",
+    element: (
+      <>
+        <Navbar />
+        <Completion />
+      </>
+    ),
+  },
+]);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

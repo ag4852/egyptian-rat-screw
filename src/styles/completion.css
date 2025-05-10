@@ -1,0 +1,94 @@
+.completion-container {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f4f4;
+    min-height: 100vh;
+    padding: 0;
+  }
+  
+  .results-container {
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .results-list {
+    margin-top: 1rem;
+  }
+  
+  .result-item {
+    border-bottom: 1px solid #eee;
+    padding: 0.8rem 0;
+  }
+  
+  .result-item:last-child {
+    border-bottom: none;
+  }
+  
+  .result-item p {
+    margin: 0.3rem 0;
+  }
+  
+  .results-title {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .results-table {
+    border-collapse: separate;
+    border-spacing: 0 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .results-table th {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.7rem;
+    color: #eaff3e;    
+    padding: 0 10px 0 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .results-table td {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #222;
+    padding: 0.4rem 1.2rem;
+    text-align: center;
+  }
+  
+  .return-button {
+    display: block;
+    margin: 2.5rem auto 0 auto;
+    padding: 0.5rem 1rem;
+    background: #eaff3e;
+    color: #48752C;
+    border: 3px solid #48752C;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 550;
+    text-align: center;
+    text-decoration: none;
+    transition: filter 0.15s;
+  }
+  
+  .return-button:hover {
+    filter: brightness(0.97);
+  }
+  
+  .highlight-header {
+    color: #eaff3e;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    background: #284E13;
+  }
